@@ -14,6 +14,7 @@
 		BE597E0B218DA838007E447A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE597E09218DA838007E447A /* LaunchScreen.storyboard */; };
 		BE597E16218DA838007E447A /* MyVMapOnTheGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE597E15218DA838007E447A /* MyVMapOnTheGoTests.swift */; };
 		BE597E21218DA838007E447A /* MyVMapOnTheGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE597E20218DA838007E447A /* MyVMapOnTheGoUITests.swift */; };
+		BE597E35218DAE3D007E447A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BE597E34218DAE3D007E447A /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BE597E1C218DA838007E447A /* MyVMapOnTheGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVMapOnTheGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE597E20218DA838007E447A /* MyVMapOnTheGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVMapOnTheGoUITests.swift; sourceTree = "<group>"; };
 		BE597E22218DA838007E447A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE597E34218DAE3D007E447A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,15 @@
 		BE597DFF218DA837007E447A /* MyVMapOnTheGo */ = {
 			isa = PBXGroup;
 			children = (
+				BE597E0C218DA838007E447A /* Info.plist */,
+				BE597E33218DAB56007E447A /* Supporting Files */,
+				BE597E32218DAB4A007E447A /* Assets */,
+				BE597E30218DAB10007E447A /* Model */,
+				BE597E2F218DAB02007E447A /* View */,
+				BE597E2E218DAAF1007E447A /* Controller */,
 				BE597E00218DA837007E447A /* AppDelegate.swift */,
 				BE597E02218DA837007E447A /* ViewController.swift */,
-				BE597E04218DA837007E447A /* Main.storyboard */,
-				BE597E07218DA838007E447A /* Assets.xcassets */,
-				BE597E09218DA838007E447A /* LaunchScreen.storyboard */,
-				BE597E0C218DA838007E447A /* Info.plist */,
+				BE597E34218DAE3D007E447A /* Podfile */,
 			);
 			path = MyVMapOnTheGo;
 			sourceTree = "<group>";
@@ -123,6 +128,52 @@
 				BE597E22218DA838007E447A /* Info.plist */,
 			);
 			path = MyVMapOnTheGoUITests;
+			sourceTree = "<group>";
+		};
+		BE597E2E218DAAF1007E447A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE597E2F218DAB02007E447A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE597E30218DAB10007E447A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE597E31218DAB22007E447A /* Client */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE597E31218DAB22007E447A /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		BE597E32218DAB4A007E447A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BE597E04218DA837007E447A /* Main.storyboard */,
+				BE597E07218DA838007E447A /* Assets.xcassets */,
+				BE597E09218DA838007E447A /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BE597E33218DAB56007E447A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +282,7 @@
 			files = (
 				BE597E0B218DA838007E447A /* LaunchScreen.storyboard in Resources */,
 				BE597E08218DA838007E447A /* Assets.xcassets in Resources */,
+				BE597E35218DAE3D007E447A /* Podfile in Resources */,
 				BE597E06218DA837007E447A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
