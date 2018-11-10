@@ -1,4 +1,6 @@
 platform :ios, '8.1'
+project '/Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo.xcodeproj'
 target "MyVMapOnTheGo" do
 pod 'Firebase'
+pod 'GoogleSignIn'
 end
