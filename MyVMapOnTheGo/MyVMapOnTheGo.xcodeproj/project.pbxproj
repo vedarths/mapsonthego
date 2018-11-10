@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A31A7D4580A69A63B1E1C297 /* libPods-MyVMapOnTheGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AFBED4B3EFFCECF7A862E7 /* libPods-MyVMapOnTheGo.a */; };
+		BE4E20052196CEB0001FA836 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E20042196CEB0001FA836 /* BorderedButton.swift */; };
+		BE4E20072196DC00001FA836 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E20062196DC00001FA836 /* UdacityClient.swift */; };
+		BE4E20092196DC18001FA836 /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E20082196DC18001FA836 /* ParseClient.swift */; };
 		BE597E01218DA837007E447A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE597E00218DA837007E447A /* AppDelegate.swift */; };
 		BE597E06218DA837007E447A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE597E04218DA837007E447A /* Main.storyboard */; };
 		BE597E08218DA838007E447A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE597E07218DA838007E447A /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		42929F5C6F8A0C155FF3E8C4 /* Pods-MyVMapOnTheGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyVMapOnTheGo.debug.xcconfig"; path = "MyVMapOnTheGo/Pods/Target Support Files/Pods-MyVMapOnTheGo/Pods-MyVMapOnTheGo.debug.xcconfig"; sourceTree = "<group>"; };
 		6F02160908C2F2CCB6295BCF /* Pods-MyVMapOnTheGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyVMapOnTheGo.release.xcconfig"; path = "MyVMapOnTheGo/Pods/Target Support Files/Pods-MyVMapOnTheGo/Pods-MyVMapOnTheGo.release.xcconfig"; sourceTree = "<group>"; };
 		A4AFBED4B3EFFCECF7A862E7 /* libPods-MyVMapOnTheGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyVMapOnTheGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4E20042196CEB0001FA836 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BorderedButton.swift; path = "MyVMapOnTheGo/Supporting Files/BorderedButton.swift"; sourceTree = SOURCE_ROOT; };
+		BE4E20062196DC00001FA836 /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UdacityClient.swift; path = ../../../../UdacityClient.swift; sourceTree = "<group>"; };
+		BE4E20082196DC18001FA836 /* ParseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParseClient.swift; path = ../../../../ParseClient.swift; sourceTree = "<group>"; };
 		BE597DFD218DA837007E447A /* MyVMapOnTheGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVMapOnTheGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE597E00218DA837007E447A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE597E05218DA837007E447A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,6 +168,7 @@
 		BE597E2F218DAB02007E447A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE4E20042196CEB0001FA836 /* BorderedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +184,8 @@
 		BE597E31218DAB22007E447A /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				BE4E20062196DC00001FA836 /* UdacityClient.swift */,
+				BE4E20082196DC18001FA836 /* ParseClient.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -391,8 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4E20072196DC00001FA836 /* UdacityClient.swift in Sources */,
+				BE4E20092196DC18001FA836 /* ParseClient.swift in Sources */,
 				BE597E3D218DE05D007E447A /* LoginViewController.swift in Sources */,
 				BE597E01218DA837007E447A /* AppDelegate.swift in Sources */,
+				BE4E20052196CEB0001FA836 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
