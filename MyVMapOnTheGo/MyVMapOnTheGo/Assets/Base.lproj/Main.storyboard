@@ -46,6 +46,9 @@
                                 <color key="backgroundColor" red="0.059798034865034301" green="0.19133435276526789" blue="0.91921168565750122" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="doLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCN-6J-ZYj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56851112747790389" green="0.83080207783897742" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

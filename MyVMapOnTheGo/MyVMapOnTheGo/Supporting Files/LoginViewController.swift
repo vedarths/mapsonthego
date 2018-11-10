@@ -12,6 +12,9 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var GIDSignInButton: GIDSignInButton!
     
+    @IBAction func doLogin(_ sender: Any) {
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.uiDelegate = self
