@@ -1,5 +1,5 @@
 //
-//  BorderedButton.swift
+//  StyledButton.swift
 //  MyVMapOnTheGo
 //
 //  Created by Vedarth Solutions on 11/10/18.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-// MARK: - BorderedButton: Button
-
-class BorderedButton: UIButton {
+class StyledButton : UIButton {
     
     // MARK: Properties
     
@@ -18,9 +16,9 @@ class BorderedButton: UIButton {
     let darkerBlue = UIColor(red: 0.0, green: 0.298, blue: 0.686, alpha:1.0)
     let lighterBlue = UIColor(red: 0.0, green:0.502, blue:0.839, alpha: 1.0)
     let titleLabelFontSize: CGFloat = 17.0
-    let borderedButtonHeight: CGFloat = 44.0
-    let borderedButtonCornerRadius: CGFloat = 4.0
-    let phoneBorderedButtonExtraPadding: CGFloat = 14.0
+    let styledButtonHeight: CGFloat = 44.0
+    let styledButtonCornerRadius: CGFloat = 4.0
+    let phoneStyledButtonExtraPadding: CGFloat = 14.0
     
     var backingColor: UIColor? = nil
     var highlightedBackingColor: UIColor? = nil
@@ -29,17 +27,17 @@ class BorderedButton: UIButton {
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-        themeBorderedButton()
+        themeStyledButton()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        themeBorderedButton()
+        themeStyledButton()
     }
     
-    private func themeBorderedButton() {
+    private func themeStyledButton() {
         layer.masksToBounds = true
-        layer.cornerRadius = borderedButtonCornerRadius
+        layer.cornerRadius = styledButtonCornerRadius
         highlightedBackingColor = darkerBlue
         backingColor = lighterBlue
         backgroundColor = lighterBlue
@@ -79,11 +77,10 @@ class BorderedButton: UIButton {
     // MARK: Layout
     
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-        let extraButtonPadding : CGFloat = phoneBorderedButtonExtraPadding
+        let extraButtonPadding : CGFloat = phoneStyledButtonExtraPadding
         var sizeThatFits = CGSize.zero
         sizeThatFits.width = super.sizeThatFits(size).width + extraButtonPadding
-        sizeThatFits.height = borderedButtonHeight
+        sizeThatFits.height = styledButtonHeight
         return sizeThatFits
     }
 }
-
