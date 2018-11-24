@@ -19,6 +19,11 @@
 		BE597E35218DAE3D007E447A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BE597E34218DAE3D007E447A /* Podfile */; };
 		BE597E3B218DDC80007E447A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE597E3A218DDC80007E447A /* Default-568h@2x.png */; };
 		BE597E3F218DE66D007E447A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE597E3E218DE66D007E447A /* GoogleService-Info.plist */; };
+		BE98FD562196E42E00DC9D4D /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98FD552196E42E00DC9D4D /* UdacityClient.swift */; };
+		BE98FD582196E43C00DC9D4D /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98FD572196E43C00DC9D4D /* ParseClient.swift */; };
+		BE98FD5B2196EA1D00DC9D4D /* UdacityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98FD5A2196EA1D00DC9D4D /* UdacityConstants.swift */; };
+		BE9F361221A0031600957323 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F361121A0031600957323 /* GCDBlackBox.swift */; };
+		BE9F361421A003AF00957323 /* UdacityConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F361321A003AF00957323 /* UdacityConvenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		BE597E34218DAE3D007E447A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BE597E3A218DDC80007E447A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BE597E3E218DE66D007E447A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE98FD552196E42E00DC9D4D /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
+		BE98FD572196E43C00DC9D4D /* ParseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
+		BE98FD5A2196EA1D00DC9D4D /* UdacityConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityConstants.swift; sourceTree = "<group>"; };
+		BE9F361121A0031600957323 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		BE9F361321A003AF00957323 /* UdacityConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityConvenience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,7 @@
 		BE597DFF218DA837007E447A /* MyVMapOnTheGo */ = {
 			isa = PBXGroup;
 			children = (
+				BE98FD532196E41100DC9D4D /* Model */,
 				BE4E20132196DF0F001FA836 /* View */,
 				BE4E20102196DEBF001FA836 /* Controller */,
 				BE597E3E218DE66D007E447A /* GoogleService-Info.plist */,
@@ -146,6 +157,7 @@
 				BE597E32218DAB4A007E447A /* Assets */,
 				BE597E00218DA837007E447A /* AppDelegate.swift */,
 				BE597E34218DAE3D007E447A /* Podfile */,
+				BE9F361121A0031600957323 /* GCDBlackBox.swift */,
 			);
 			path = MyVMapOnTheGo;
 			sourceTree = "<group>";
@@ -183,6 +195,33 @@
 			children = (
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE98FD532196E41100DC9D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE98FD542196E41E00DC9D4D /* Client */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE98FD542196E41E00DC9D4D /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				BE98FD592196E50800DC9D4D /* Udacity */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		BE98FD592196E50800DC9D4D /* Udacity */ = {
+			isa = PBXGroup;
+			children = (
+				BE98FD552196E42E00DC9D4D /* UdacityClient.swift */,
+				BE98FD572196E43C00DC9D4D /* ParseClient.swift */,
+				BE98FD5A2196EA1D00DC9D4D /* UdacityConstants.swift */,
+				BE9F361321A003AF00957323 /* UdacityConvenience.swift */,
+			);
+			path = Udacity;
 			sourceTree = "<group>";
 		};
 		DEE057F1D700232B0CB0A2C0 /* Frameworks */ = {
@@ -378,9 +417,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE98FD562196E42E00DC9D4D /* UdacityClient.swift in Sources */,
+				BE98FD582196E43C00DC9D4D /* ParseClient.swift in Sources */,
 				BE4E20122196DEE8001FA836 /* LoginViewController.swift in Sources */,
+				BE9F361421A003AF00957323 /* UdacityConvenience.swift in Sources */,
 				BE597E01218DA837007E447A /* AppDelegate.swift in Sources */,
 				BE4E20152196DF35001FA836 /* StyledButton.swift in Sources */,
+				BE98FD5B2196EA1D00DC9D4D /* UdacityConstants.swift in Sources */,
+				BE9F361221A0031600957323 /* GCDBlackBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
