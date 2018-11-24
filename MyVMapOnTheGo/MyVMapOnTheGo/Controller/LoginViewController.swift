@@ -19,6 +19,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.uiDelegate = self
         GIDSignIn.sharedInstance()?.signInSilently()
+        self.completeLogin()
     }
     @IBAction func doLogin(_ sender: Any) {
         UdacityClient.sharedInstance().authenticateWithViewController(self) { (success, errorString) in
