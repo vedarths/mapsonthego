@@ -29,8 +29,9 @@ extension ParseClient {
                     
                     let locations = Location.LocationsFromResults(results)
                     completionHandlerForLocations(true, locations, nil)
+                } else {
+                    completionHandlerForLocations(true, nil, nil)
                 }
-                completionHandlerForLocations(true, nil, nil)
             }
         }
         

@@ -12,13 +12,15 @@ import MapKit
 
 class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
     
+    
     @IBOutlet weak var mapView: MKMapView!
+    
     
     var locations: [Location] = [Location]()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-       let locations = getLocations();
+       super.viewDidLoad()
+       getLocations();
        
        var annotations = [MKPointAnnotation]()
        
@@ -46,7 +48,7 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
     }
     
     
-    func getLocations() -> [Location] {
+    func getLocations() -> Void {
        
         ParseClient.sharedInstance().getStudentLocations() { (success, locations, errorString) in
             performUIUpdatesOnMain {
@@ -58,7 +60,7 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
                 }
             }
         }
-        return locations
+        
     }
     
     // MARK: - MKMapViewDelegate
