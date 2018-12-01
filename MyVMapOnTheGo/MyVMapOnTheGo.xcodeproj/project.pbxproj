@@ -24,6 +24,9 @@
 		BE98FD5B2196EA1D00DC9D4D /* UdacityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98FD5A2196EA1D00DC9D4D /* UdacityConstants.swift */; };
 		BE9F361221A0031600957323 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F361121A0031600957323 /* GCDBlackBox.swift */; };
 		BE9F361421A003AF00957323 /* UdacityConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F361321A003AF00957323 /* UdacityConvenience.swift */; };
+		BEDC054821B2593F009458E9 /* StudentLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC054721B2593F009458E9 /* StudentLocationsViewController.swift */; };
+		BEDC054A21B25C0E009458E9 /* ParseConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC054921B25C0E009458E9 /* ParseConvenience.swift */; };
+		BEDC054C21B2695E009458E9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC054B21B2695E009458E9 /* Location.swift */; };
 		BEE2067921B2528D00676D35 /* ParseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE2067821B2528D00676D35 /* ParseConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,9 @@
 		BE98FD5A2196EA1D00DC9D4D /* UdacityConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityConstants.swift; sourceTree = "<group>"; };
 		BE9F361121A0031600957323 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		BE9F361321A003AF00957323 /* UdacityConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityConvenience.swift; sourceTree = "<group>"; };
+		BEDC054721B2593F009458E9 /* StudentLocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationsViewController.swift; sourceTree = "<group>"; };
+		BEDC054921B25C0E009458E9 /* ParseConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseConvenience.swift; sourceTree = "<group>"; };
+		BEDC054B21B2695E009458E9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BEE2067821B2528D00676D35 /* ParseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				BE4E20112196DEE8001FA836 /* LoginViewController.swift */,
+				BEDC054721B2593F009458E9 /* StudentLocationsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,7 +136,6 @@
 			children = (
 				BE597E3A218DDC80007E447A /* Default-568h@2x.png */,
 				BE597DFF218DA837007E447A /* MyVMapOnTheGo */,
-				BE597E14218DA838007E447A /* MyVMapOnTheGoTests */,
 				BE597E1F218DA838007E447A /* MyVMapOnTheGoUITests */,
 				BE597DFE218DA837007E447A /* Products */,
 				935E51AFA936105CA533758C /* Pods */,
@@ -158,6 +164,7 @@
 				BE597E33218DAB56007E447A /* Supporting Files */,
 				BE597E32218DAB4A007E447A /* Assets */,
 				BE597E00218DA837007E447A /* AppDelegate.swift */,
+				BE597E14218DA838007E447A /* MyVMapOnTheGoTests */,
 				BE597E34218DAE3D007E447A /* Podfile */,
 				BE9F361121A0031600957323 /* GCDBlackBox.swift */,
 			);
@@ -231,6 +238,8 @@
 			children = (
 				BE98FD572196E43C00DC9D4D /* ParseClient.swift */,
 				BEE2067821B2528D00676D35 /* ParseConstants.swift */,
+				BEDC054921B25C0E009458E9 /* ParseConvenience.swift */,
+				BEDC054B21B2695E009458E9 /* Location.swift */,
 			);
 			path = Parse;
 			sourceTree = "<group>";
@@ -428,14 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDC054A21B25C0E009458E9 /* ParseConvenience.swift in Sources */,
 				BE98FD562196E42E00DC9D4D /* UdacityClient.swift in Sources */,
 				BE98FD582196E43C00DC9D4D /* ParseClient.swift in Sources */,
 				BE4E20122196DEE8001FA836 /* LoginViewController.swift in Sources */,
+				BEDC054821B2593F009458E9 /* StudentLocationsViewController.swift in Sources */,
 				BE9F361421A003AF00957323 /* UdacityConvenience.swift in Sources */,
 				BE597E01218DA837007E447A /* AppDelegate.swift in Sources */,
 				BEE2067921B2528D00676D35 /* ParseConstants.swift in Sources */,
 				BE4E20152196DF35001FA836 /* StyledButton.swift in Sources */,
 				BE98FD5B2196EA1D00DC9D4D /* UdacityConstants.swift in Sources */,
+				BEDC054C21B2695E009458E9 /* Location.swift in Sources */,
 				BE9F361221A0031600957323 /* GCDBlackBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

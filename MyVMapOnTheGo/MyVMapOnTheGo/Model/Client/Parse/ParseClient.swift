@@ -18,8 +18,15 @@ class ParseClient: NSObject {
     func taskForGETMethod(_ method: String, parameters: [String:AnyObject], completionHandlerForGET: @escaping (_ result: AnyObject?, _ error: NSError?) -> Void) -> URLSessionDataTask {
 
         /* 2/3. Build the URL, Configure the request */
-        let request = NSMutableURLRequest(url: parseURL(withPathExtension: method))
+        let request = NSMutableURLRequest(url: parseURL(parameters, withPathExtension: method))
 
+        /* add standard headers */
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: ParseClient.Constants.AcceptKey)
+        request.addValue("application/json", forHTTPHeaderField: ParseClient.Constants.ContentType)
+        request.addValue(ParseClient.HeaderValues.ApiKeyValue, forHTTPHeaderField: ParseClient.Constants.ApiKey)
+        request.addValue(ParseClient.HeaderValues.ApplicationIdValue, forHTTPHeaderField: ParseClient.Constants.ApplicationId)
+        
         /* 4. Make the request */
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
 
@@ -57,6 +64,8 @@ class ParseClient: NSObject {
         return task
     }
     
+    
+    
     // given raw JSON, return a usable Foundation object
     private func convertDataWithCompletionHandler(_ data: Data, completionHandlerForConvertData: (_ result: AnyObject?, _ error: NSError?) -> Void) {
         
@@ -71,16 +80,21 @@ class ParseClient: NSObject {
     }
 
     // create a URL from parameters
-    private func parseURL(withPathExtension: String? = nil) -> URL {
+    private func parseURL(_ parameters: [String:AnyObject], withPathExtension: String? = nil) -> URL {
 
         var components = URLComponents()
         components.scheme = ParseClient.Constants.ApiScheme
         components.host = ParseClient.Constants.ApiHost
         components.path = ParseClient.Constants.ApiPath + (withPathExtension ?? "")
-        components.queryItems = [URLQueryItem]()
+         components.queryItems = [URLQueryItem]()
+        for (key, value) in parameters {
+            let queryItem = URLQueryItem(name: key, value: "\(value)")
+            components.queryItems!.append(queryItem)
+        }
         return components.url!
     }
-
+    
+   
 class func sharedInstance() -> ParseClient {
     struct Singleton {
         static var sharedInstance = ParseClient()

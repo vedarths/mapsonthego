@@ -100,7 +100,7 @@
         <!--Map-->
         <scene sceneID="bsF-DI-IVe">
             <objects>
-                <viewController id="SmQ-n7-wNl" sceneMemberID="viewController">
+                <viewController id="SmQ-n7-wNl" customClass="StudentLocationsViewController" customModule="MyVMapOnTheGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sAZ-E9-mrb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,9 @@
                         <viewLayoutGuide key="safeArea" id="Aoh-Yc-rxO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="icon_mapview-selected" id="bpc-Kz-E31"/>
+                    <connections>
+                        <outlet property="mapView" destination="XlW-xP-DCj" id="JrT-ki-qZw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZZ-ea-IWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
