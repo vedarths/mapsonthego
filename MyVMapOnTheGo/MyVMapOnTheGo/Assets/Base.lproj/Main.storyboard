@@ -144,7 +144,10 @@
         <scene sceneID="fz4-K4-Jhq">
             <objects>
                 <tabBarController storyboardIdentifier="MapTabBarController" title="MapTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LbT-Zk-dPc" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="On The Map" id="0an-rI-sRT"/>
+                    <navigationItem key="navigationItem" title="On The Map" id="0an-rI-sRT">
+                        <barButtonItem key="leftBarButtonItem" image="icon_pin" id="H7o-HC-myv"/>
+                        <barButtonItem key="rightBarButtonItem" image="icon_refresh" id="pbS-QA-JzA"/>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4i1-hG-NAd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -163,6 +166,8 @@
     <resources>
         <image name="icon_listview-selected" width="75" height="50"/>
         <image name="icon_mapview-selected" width="75" height="50"/>
+        <image name="icon_pin" width="24" height="24"/>
+        <image name="icon_refresh" width="24" height="24"/>
         <image name="logo-u" width="62" height="62"/>
     </resources>
 </document>
