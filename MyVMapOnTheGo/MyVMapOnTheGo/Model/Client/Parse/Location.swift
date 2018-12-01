@@ -21,10 +21,30 @@ struct Location {
     init(dictionary: [String:Any]) {
         objectId = dictionary[ParseClient.JSONResponseKeys.ObjectId] as! String
         uniqueKey = dictionary[ParseClient.JSONResponseKeys.UniqueKey] as! String
-        firstName = dictionary[ParseClient.JSONResponseKeys.FirstName] as! String
-        lastName = dictionary[ParseClient.JSONResponseKeys.LastName] as! String
-        mapString = dictionary[ParseClient.JSONResponseKeys.MapString] as! String
-        mediaURL = dictionary[ParseClient.JSONResponseKeys.MediaURL] as! String
+        if let firstNameValue = dictionary[ParseClient.JSONResponseKeys.FirstName] as! String?,
+            firstNameValue.isEmpty == false {
+            firstName = firstNameValue
+        } else {
+            firstName = ""
+        }
+        if let lastNameValue = dictionary[ParseClient.JSONResponseKeys.LastName] as! String?,
+            lastNameValue.isEmpty == false {
+            lastName = lastNameValue
+        } else {
+            lastName = ""
+        }
+        if let mapStringValue = dictionary[ParseClient.JSONResponseKeys.MapString] as! String?,
+            mapStringValue.isEmpty == false {
+            mapString = mapStringValue
+        } else {
+            mapString = ""
+        }
+        if let mediaUrlValue = dictionary[ParseClient.JSONResponseKeys.MediaURL] as! String?,
+            mediaUrlValue.isEmpty == false {
+            mediaURL = mediaUrlValue
+        } else {
+            mediaURL = ""
+        }
         latitude = dictionary[ParseClient.JSONResponseKeys.Latitude] as! Double
         longitude = dictionary[ParseClient.JSONResponseKeys.Longitude] as! Double
         createdAt = dictionary[ParseClient.JSONResponseKeys.CreatedAt] as! String

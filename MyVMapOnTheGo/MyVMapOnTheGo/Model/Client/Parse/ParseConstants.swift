@@ -37,7 +37,7 @@ extension ParseClient {
     }
     
     struct URLArgumentValues {
-        static let limit = "200"
+        static let limit = "20"
         //static let Skip = "400"
     }
     
