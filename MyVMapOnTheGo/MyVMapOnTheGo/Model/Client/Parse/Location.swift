@@ -19,8 +19,18 @@ struct Location {
     
     // construct a Result from a dictionary
     init(dictionary: [String:Any]) {
-        objectId = dictionary[ParseClient.JSONResponseKeys.ObjectId] as! String
-        uniqueKey = dictionary[ParseClient.JSONResponseKeys.UniqueKey] as! String
+        if let objectIdValue = dictionary[ParseClient.JSONResponseKeys.ObjectId] as! String?,
+            objectIdValue.isEmpty == false {
+            objectId = objectIdValue
+        } else {
+            objectId = ""
+        }
+        if let uniqueKeyValue = dictionary[ParseClient.JSONResponseKeys.UniqueKey] as! String?,
+            uniqueKeyValue.isEmpty == false {
+            uniqueKey = uniqueKeyValue
+        } else {
+            uniqueKey = ""
+        }
         if let firstNameValue = dictionary[ParseClient.JSONResponseKeys.FirstName] as! String?,
             firstNameValue.isEmpty == false {
             firstName = firstNameValue
@@ -45,10 +55,28 @@ struct Location {
         } else {
             mediaURL = ""
         }
-        latitude = dictionary[ParseClient.JSONResponseKeys.Latitude] as! Double
-        longitude = dictionary[ParseClient.JSONResponseKeys.Longitude] as! Double
-        createdAt = dictionary[ParseClient.JSONResponseKeys.CreatedAt] as! String
-        updatedAt = dictionary[ParseClient.JSONResponseKeys.UpdatedAt] as! String
+        if let latitudeValue = dictionary[ParseClient.JSONResponseKeys.Latitude] as! Double?,
+            latitudeValue.isNaN == false {
+            latitude = latitudeValue
+        } else {
+            latitude = Double(bitPattern: 0)
+        }
+        if let longitudeValue = dictionary[ParseClient.JSONResponseKeys.Longitude] as! Double?,
+            longitudeValue.isNaN == false {
+              longitude = longitudeValue
+        } else {
+            longitude = Double(0)
+        }
+        if let createdAtValue = dictionary[ParseClient.JSONResponseKeys.CreatedAt] as! String?, createdAtValue.isEmpty == false {
+            createdAt = createdAtValue
+        } else {
+            createdAt = ""
+        }
+        if let updatedAtValue = dictionary[ParseClient.JSONResponseKeys.UpdatedAt] as! String?, updatedAtValue.isEmpty == false {
+            updatedAt = updatedAtValue
+        } else {
+            updatedAt = ""
+        }
     }
     
     static func LocationsFromResults(_ results: [[String:Any]]) -> [Location] {

@@ -13,13 +13,21 @@ import MapKit
 class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
     
     
+  
     @IBOutlet weak var mapView: MKMapView!
+
     
+
+    
+    
+    
+
     
     var locations: [Location] = [Location]()
     
     override func viewDidLoad() {
        super.viewDidLoad()
+       mapView.delegate = self
        getLocations();
        
        var annotations = [MKPointAnnotation]()
