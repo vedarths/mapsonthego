@@ -16,22 +16,35 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
   
     @IBOutlet weak var mapView: MKMapView!
 
-    
-
-    
-    
-    
-
-    
     var locations: [Location] = [Location]()
     
     override func viewDidLoad() {
        super.viewDidLoad()
        mapView.delegate = self
-       getLocations();
+       getLocations()
+    }
+    
+    
+    func getLocations() -> Void {
        
-       var annotations = [MKPointAnnotation]()
-       
+        ParseClient.sharedInstance().getStudentLocations() { (success, locations, errorString) in
+            performUIUpdatesOnMain {
+                if success {
+                    print("retrieved locations \(locations!)")
+                    self.locations = locations!
+                    self.updateAnnotations()
+                } else {
+                    print(errorString!)
+                }
+            }
+        }
+        
+    }
+    
+    func updateAnnotations() -> Void {
+        
+        var annotations = [MKPointAnnotation]()
+        
         for location in locations {
             let lat = CLLocationDegrees(location.latitude)
             let long = CLLocationDegrees(location.longitude)
@@ -53,22 +66,6 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
         }
         // When the array is complete, we add the annotations to the map.
         self.mapView.addAnnotations(annotations)
-    }
-    
-    
-    func getLocations() -> Void {
-       
-        ParseClient.sharedInstance().getStudentLocations() { (success, locations, errorString) in
-            performUIUpdatesOnMain {
-                if success {
-                    print("retrieved locations \(locations!)")
-                    self.locations = locations!
-                } else {
-                    print(errorString!)
-                }
-            }
-        }
-        
     }
     
     // MARK: - MKMapViewDelegate
