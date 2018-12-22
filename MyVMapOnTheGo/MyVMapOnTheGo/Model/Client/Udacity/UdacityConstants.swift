@@ -17,8 +17,8 @@ extension UdacityClient {
         static let ContentType = "Content-Type"
         
         static let ApiScheme = "https"
-        static let ApiHost = "www.udacity.com"
-        static let ApiPath = "/api"
+        static let ApiHost = "onthemap-api.udacity.com"
+        static let ApiPath = "/v1"
     }
     
     struct Methods {

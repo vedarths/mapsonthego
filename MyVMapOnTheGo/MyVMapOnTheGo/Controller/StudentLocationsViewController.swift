@@ -66,6 +66,9 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
         }
         // When the array is complete, we add the annotations to the map.
         self.mapView.addAnnotations(annotations)
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.locations = locations
     }
     
     // MARK: - MKMapViewDelegate
