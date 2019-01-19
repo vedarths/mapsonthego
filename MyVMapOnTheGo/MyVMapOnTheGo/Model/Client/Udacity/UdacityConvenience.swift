@@ -23,7 +23,42 @@ extension UdacityClient {
                 completionHandlerForSession(true, nil)
             }
         }
+        
     }
+    
+    
+    func getUser(id: String, completionHandlerForGetUser: @escaping (_ success: Bool, _ user: UdacityUser?, _ errorString: String?) -> Void) {
+        let method : String = Methods.Users + "/\(id)"
+        let parameters = [String:AnyObject]()
+        let _ = taskForGETMethod(method, parameters: parameters as [String:AnyObject]) { (results, error) in
+            
+            /* 2. Send the desired value(s) to completion handler */
+            if let error = error {
+                print(error)
+                completionHandlerForGetUser(false, nil, "Could not get data from Udacity for getUser")
+            } else {
+                
+                guard error == nil else {
+                    completionHandlerForGetUser(false, nil, "Get User Failed.")
+                    return
+                }
+                
+                guard let firstName = results?["first_name"] as? String,
+                      let lastName = results?["last_name"] as? String else {
+                    print("Can't find [user]['first_name'] or [user]['last_name'] in response")
+                    completionHandlerForGetUser(false, nil, "Connection error")
+                    return
+                }
+                
+                let user = UdacityUser(dictionary: [
+                    "id": id as AnyObject,
+                    "firstName": firstName as AnyObject,
+                    "lastName": lastName as AnyObject,
+                    ])
+                completionHandlerForGetUser(true, user, nil)
+            }
+        }
+   }
     
     private func getSessionId(_ completionHandlerForSession: @escaping (_ success: Bool, _ sessionId: String?, _ errorString: String?) -> Void) {
         
@@ -48,9 +83,23 @@ extension UdacityClient {
                 completionHandlerForSession(false, nil, "Login Failed (Session Id).")
                 return
             }
-            completionHandlerForSession(true, sessionId, nil)
+        
+            guard let accountDictionary = results?["account"] as? NSDictionary else {
+                print("Could not find dictionary account in \(results!)")
+                completionHandlerForSession(false, nil, "Login Failed (Account).")
+                return
+            }
             
+            guard let userId = accountDictionary["key"] as? String else {
+                print("Could not find key in \(results!)")
+                completionHandlerForSession(false, nil, "Login Failed (Key).")
+                return
+            }
+            self.userId = userId
+            completionHandlerForSession(true, sessionId, nil)
            }
       }
     }
+    
+    
 }

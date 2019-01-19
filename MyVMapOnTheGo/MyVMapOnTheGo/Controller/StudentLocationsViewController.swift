@@ -27,7 +27,7 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
     
     func getLocations() -> Void {
        
-        ParseClient.sharedInstance().getStudentLocations() { (success, locations, errorString) in
+        ParseClient.sharedInstance().getAllLocations() { (success, locations, errorString) in
             performUIUpdatesOnMain {
                 if success {
                     print("retrieved locations \(locations!)")
@@ -95,6 +95,8 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
         return pinView
     }
     
+    @IBAction func refreshClicked(_ sender: Any) {
+    }
     
     // This delegate method is implemented to respond to taps. It opens the system browser
     // to the URL specified in the annotationViews subtitle property.

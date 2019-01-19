@@ -36,7 +36,7 @@ class MapTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let app = UIApplication.shared
         let location = locations[(indexPath as NSIndexPath).row]
-        if let mediaUrlValue = location.mediaURL as! String?,  mediaUrlValue.isEmpty == false {
+        if let mediaUrlValue = location.mediaURL as String?,  mediaUrlValue.isEmpty == false {
            if (verifyUrl(urlString: mediaUrlValue)) {
                app.openURL(URL(string: location.mediaURL)!)
            }

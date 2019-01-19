@@ -32,13 +32,13 @@ extension ParseClient {
     
     struct URLArgumentKeys {
         static let Limit = "limit"
-        //static let Skip = "skip"
+        static let Skip = "skip"
         static let Where = "where"
     }
     
     struct URLArgumentValues {
         static let limit = "40"
-        //static let Skip = "400"
+        static let Skip = "400"
     }
     
     struct JSONResponseKeys {
