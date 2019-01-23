@@ -6,16 +6,16 @@
 //  Copyright © 2018 Vedarth Solutions. All rights reserved.
 //
 struct Location {
-    let objectId: String
-    let uniqueKey: String
-    let firstName: String
-    let lastName: String
-    let mapString: String
-    let mediaURL: String
-    let latitude: Double
-    let longitude: Double
-    let createdAt: String
-    let updatedAt: String
+    var objectId: String
+    var uniqueKey: String
+    var firstName: String
+    var lastName: String
+    var mapString: String
+    var mediaURL: String
+    var latitude: Double
+    var longitude: Double
+    var createdAt: String
+    var updatedAt: String
     
     // construct a Result from a dictionary
     init(dictionary: [String:Any]) {
@@ -49,12 +49,13 @@ struct Location {
         } else {
             mapString = ""
         }
-        if let mediaUrlValue = dictionary[ParseClient.JSONResponseKeys.MediaURL] as! String?,
-            mediaUrlValue.isEmpty == false {
-            mediaURL = mediaUrlValue
-        } else {
-            mediaURL = ""
-        }
+        mediaURL = ""
+//        if let mediaUrlValue = dictionary[ParseClient.JSONResponseKeys.MediaURL] as! String?,
+//            mediaUrlValue.isEmpty == false {
+//            mediaURL = mediaUrlValue
+//        } else {
+//            mediaURL = ""
+//        }
         if let latitudeValue = dictionary[ParseClient.JSONResponseKeys.Latitude] as! Double?,
             latitudeValue.isNaN == false {
             latitude = latitudeValue
