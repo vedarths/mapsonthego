@@ -6,15 +6,13 @@
          contextName = "AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "closure #1 in ParseClient.getAllLocations(completionHandlerForLocations:):ParseConvenience.swift">
+      </ContextState>
+      <ContextState
          contextName = "StudentLocationsViewController.getLocations():StudentLocationsViewController.swift">
       </ContextState>
       <ContextState
          contextName = "ParseClient.postStudentLocation(location:completionHandlerForLocations:):ParseConvenience.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "JSONSerialization.data(withJSONObject: location, options: [])">
-            </PersistentString>
-         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #1 in UdacityClient.getSessionId(_:):UdacityConvenience.swift">
@@ -23,15 +21,15 @@
          contextName = "static Location.LocationsFromResults(_:):Location.swift">
       </ContextState>
       <ContextState
-         contextName = "closure #1 in AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
-      </ContextState>
-      <ContextState
          contextName = "Location.init(dictionary:):Location.swift">
          <PersistentStrings>
             <PersistentString
                value = "dictionary[ParsedClient.JSONResponseKeys.ObjectId] as! String">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

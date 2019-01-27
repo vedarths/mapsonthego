@@ -23,7 +23,6 @@ extension ParseClient {
                 print(error)
                 completionHandlerForLocations(false, nil, "Could not get data from Parse for getStudentLocations")
             } else {
-                print("retrieved locations successfully!")
                 if let results = results?["results"] as? [[String: Any]] {
                     
                     let locations = Location.LocationsFromResults(results)
@@ -47,7 +46,6 @@ extension ParseClient {
                 print(error)
                 completionHandlerForLocations(false, nil, "Could not get data from Parse for getLocationsForStudent")
             } else {
-                print("retrieved locations for student successfully!")
                 if let results = results?["results"] as? [[String: Any]] {
                     
                     let locations = Location.LocationsFromResults(results)
@@ -61,9 +59,9 @@ extension ParseClient {
     
     func postStudentLocation(location: Location, completionHandlerForLocations: @escaping (_ success: Bool, _ errorString: NSError?) -> Void) {
         
-        let jsonBody = try! JSONSerialization.data(withJSONObject: location, options: []) as AnyObject?
         
-        let _ = taskForPOSTMethod(Methods.Location, jsonBody: jsonBody as! String) { (success, errorString) in
+        let jsonBody = "{\"uniqueKey\": \"\(location.uniqueKey)\", \"firstName\": \"\(location.firstName)\", \"lastName\": \"\(location.lastName)\",\"mapString\":  \"\(location.mapString)\", \"mediaURL\": \"\(location.mediaURL)\",\"latitude\": \(location.latitude), \"longitude\":  \(location.longitude)}"
+        let _ = taskForPOSTMethod(Methods.Location, jsonBody: jsonBody) { (success, errorString) in
             
             if let error = errorString {
                 completionHandlerForLocations(false,  error)

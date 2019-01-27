@@ -25,55 +25,55 @@ struct Location {
         } else {
             objectId = ""
         }
-        if let uniqueKeyValue = dictionary[ParseClient.JSONResponseKeys.UniqueKey] as! String?,
+        if let uniqueKeyValue = dictionary[ParseClient.JSONResponseKeys.UniqueKey] as? String,
             uniqueKeyValue.isEmpty == false {
             uniqueKey = uniqueKeyValue
         } else {
             uniqueKey = ""
         }
-        if let firstNameValue = dictionary[ParseClient.JSONResponseKeys.FirstName] as! String?,
+        if let firstNameValue = dictionary[ParseClient.JSONResponseKeys.FirstName] as? String,
             firstNameValue.isEmpty == false {
             firstName = firstNameValue
         } else {
             firstName = ""
         }
-        if let lastNameValue = dictionary[ParseClient.JSONResponseKeys.LastName] as! String?,
+        if let lastNameValue = dictionary[ParseClient.JSONResponseKeys.LastName] as? String,
             lastNameValue.isEmpty == false {
             lastName = lastNameValue
         } else {
             lastName = ""
         }
-        if let mapStringValue = dictionary[ParseClient.JSONResponseKeys.MapString] as! String?,
+        if let mapStringValue = dictionary[ParseClient.JSONResponseKeys.MapString] as? String,
             mapStringValue.isEmpty == false {
             mapString = mapStringValue
         } else {
             mapString = ""
         }
         mediaURL = ""
-//        if let mediaUrlValue = dictionary[ParseClient.JSONResponseKeys.MediaURL] as! String?,
-//            mediaUrlValue.isEmpty == false {
-//            mediaURL = mediaUrlValue
-//        } else {
-//            mediaURL = ""
-//        }
-        if let latitudeValue = dictionary[ParseClient.JSONResponseKeys.Latitude] as! Double?,
+        if let mediaUrlValue = dictionary[ParseClient.JSONResponseKeys.MediaURL] as? String,
+            mediaUrlValue.isEmpty == false {
+            mediaURL = mediaUrlValue
+        } else {
+            mediaURL = ""
+        }
+        if let latitudeValue = dictionary[ParseClient.JSONResponseKeys.Latitude] as? Double,
             latitudeValue.isNaN == false {
             latitude = latitudeValue
         } else {
             latitude = Double(bitPattern: 0)
         }
-        if let longitudeValue = dictionary[ParseClient.JSONResponseKeys.Longitude] as! Double?,
+        if let longitudeValue = dictionary[ParseClient.JSONResponseKeys.Longitude] as? Double,
             longitudeValue.isNaN == false {
               longitude = longitudeValue
         } else {
             longitude = Double(0)
         }
-        if let createdAtValue = dictionary[ParseClient.JSONResponseKeys.CreatedAt] as! String?, createdAtValue.isEmpty == false {
+        if let createdAtValue = dictionary[ParseClient.JSONResponseKeys.CreatedAt] as? String, createdAtValue.isEmpty == false {
             createdAt = createdAtValue
         } else {
             createdAt = ""
         }
-        if let updatedAtValue = dictionary[ParseClient.JSONResponseKeys.UpdatedAt] as! String?, updatedAtValue.isEmpty == false {
+        if let updatedAtValue = dictionary[ParseClient.JSONResponseKeys.UpdatedAt] as? String, updatedAtValue.isEmpty == false {
             updatedAt = updatedAtValue
         } else {
             updatedAt = ""
@@ -85,8 +85,11 @@ struct Location {
         var locations = [Location]()
         
         // iterate through array of dictionaries, each Movie is a dictionary
+        var count:Int = 0
         for result in results {
+            print("\(count)")
             locations.append(Location(dictionary: result))
+            count = count + 1
         }
         return locations
     }

@@ -30,7 +30,6 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
         ParseClient.sharedInstance().getAllLocations() { (success, locations, errorString) in
             performUIUpdatesOnMain {
                 if success {
-                    print("retrieved locations \(locations!)")
                     self.locations = locations!
                     self.updateAnnotations()
                 } else {

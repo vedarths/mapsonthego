@@ -70,7 +70,7 @@
 		BE597E1C218DA838007E447A /* MyVMapOnTheGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVMapOnTheGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE597E20218DA838007E447A /* MyVMapOnTheGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVMapOnTheGoUITests.swift; sourceTree = "<group>"; };
 		BE597E22218DA838007E447A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE597E34218DAE3D007E447A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BE597E34218DAE3D007E447A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE597E3A218DDC80007E447A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BE597E3E218DE66D007E447A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE7C517321D9FD54007458E6 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
