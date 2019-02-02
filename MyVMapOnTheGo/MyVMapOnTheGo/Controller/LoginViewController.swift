@@ -7,18 +7,14 @@
 //
 
 import UIKit
-import GoogleSignIn
 
-class LoginViewController: UIViewController, GIDSignInUIDelegate {
+class LoginViewController: UIViewController {
     
-    @IBOutlet weak var GIDSignInButton: GIDSignInButton!
     
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        GIDSignIn.sharedInstance()?.uiDelegate = self
-        GIDSignIn.sharedInstance()?.signInSilently()
         self.completeLogin()
     }
     @IBAction func doLogin(_ sender: Any) {

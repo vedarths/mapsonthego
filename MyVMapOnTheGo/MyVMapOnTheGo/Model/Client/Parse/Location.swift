@@ -85,11 +85,9 @@ struct Location {
         var locations = [Location]()
         
         // iterate through array of dictionaries, each Movie is a dictionary
-        var count:Int = 0
         for result in results {
-            print("\(count)")
             locations.append(Location(dictionary: result))
-            count = count + 1
+           
         }
         return locations
     }

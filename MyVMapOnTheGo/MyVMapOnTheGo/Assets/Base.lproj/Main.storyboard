@@ -18,42 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEM-3L-1AS" customClass="GIDSignInButton">
-                                <rect key="frame" x="109" y="344" width="136" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="logo-u" translatesAutoresizingMaskIntoConstraints="NO" id="IZc-5u-ku9">
-                                <rect key="frame" x="134" y="26" width="52" height="62"/>
+                                <rect key="frame" x="134" y="71" width="52" height="62"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-R3-C6Z">
-                                <rect key="frame" x="16" y="102" width="288" height="26"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
-                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cap-M5-MWH">
-                                <rect key="frame" x="20" y="143" width="284" height="30"/>
+                                <rect key="frame" x="20" y="186.5" width="284" height="30"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-Xe-TBw">
-                                <rect key="frame" x="20" y="184" width="284" height="30"/>
+                                <rect key="frame" x="20" y="237.5" width="284" height="30"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7L-C8-Mmk" customClass="StyledButton" customModule="MyVMapOnTheGo" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="20" y="227" width="284" height="31"/>
-                                <color key="backgroundColor" red="0.059798034865034301" green="0.19133435276526789" blue="0.91921168565750122" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="20" y="298.5" width="284" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.34582255123093431" blue="0.021414885975564069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="doLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u9u-dm-276"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-R3-C6Z">
+                                <rect key="frame" x="16" y="145" width="288" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.56851112747790389" green="0.83080207783897742" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.96080166101455688" green="0.52710574935995647" blue="0.10015410119186706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="cap-M5-MWH" firstAttribute="top" secondItem="j2a-R3-C6Z" secondAttribute="bottom" constant="15" id="1iZ-QD-RX2"/>
+                            <constraint firstItem="cap-M5-MWH" firstAttribute="top" secondItem="j2a-R3-C6Z" secondAttribute="bottom" constant="22" id="1iZ-QD-RX2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j2a-R3-C6Z" secondAttribute="trailing" constant="16" id="3OU-YJ-WFQ"/>
                             <constraint firstItem="cap-M5-MWH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4LU-Ys-fMz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IZc-5u-ku9" secondAttribute="trailing" constant="134" id="5mR-Zu-K1p"/>
@@ -62,17 +58,16 @@
                             <constraint firstItem="IZc-5u-ku9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="JFN-xF-qdA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ayg-Xe-TBw" secondAttribute="trailing" constant="16" id="Rmc-kV-vYq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M7L-C8-Mmk" secondAttribute="trailing" constant="16" id="XSw-t0-e1H"/>
-                            <constraint firstItem="j2a-R3-C6Z" firstAttribute="top" secondItem="IZc-5u-ku9" secondAttribute="bottom" constant="14" id="bP2-vF-iGA"/>
+                            <constraint firstItem="j2a-R3-C6Z" firstAttribute="top" secondItem="IZc-5u-ku9" secondAttribute="bottom" constant="12" id="bP2-vF-iGA"/>
                             <constraint firstItem="j2a-R3-C6Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cu4-ku-7bt"/>
-                            <constraint firstItem="M7L-C8-Mmk" firstAttribute="top" secondItem="Ayg-Xe-TBw" secondAttribute="bottom" constant="13" id="gUR-Cn-sDj"/>
-                            <constraint firstItem="IZc-5u-ku9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="qrW-Cn-Lu5"/>
+                            <constraint firstItem="M7L-C8-Mmk" firstAttribute="top" secondItem="Ayg-Xe-TBw" secondAttribute="bottom" constant="31" id="gUR-Cn-sDj"/>
+                            <constraint firstItem="IZc-5u-ku9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="qrW-Cn-Lu5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cap-M5-MWH" secondAttribute="trailing" constant="16" id="rkG-Jn-Jlr"/>
-                            <constraint firstItem="Ayg-Xe-TBw" firstAttribute="top" secondItem="cap-M5-MWH" secondAttribute="bottom" constant="11" id="wN0-nj-Wul"/>
+                            <constraint firstItem="Ayg-Xe-TBw" firstAttribute="top" secondItem="cap-M5-MWH" secondAttribute="bottom" constant="21" id="wN0-nj-Wul"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="GIDSignInButton" destination="rEM-3L-1AS" id="bdT-fn-PFM"/>
                         <outlet property="password" destination="Ayg-Xe-TBw" id="RUN-ZE-lw2"/>
                         <outlet property="userName" destination="cap-M5-MWH" id="QLo-BL-Drr"/>
                     </connections>
@@ -119,8 +114,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you studying today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsJ-2i-ruS" userLabel="Question Label">
-                                <rect key="frame" x="0.0" y="58" width="320" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsJ-2i-ruS" userLabel="Question Label">
+                                <rect key="frame" x="0.0" y="58" width="320" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="uNJ-ua-6Go"/>
                                 </constraints>
@@ -129,7 +124,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nVs-AH-prF">
-                                <rect key="frame" x="0.0" y="70.5" width="320" height="318"/>
+                                <rect key="frame" x="0.0" y="145" width="320" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="318" id="gjO-w9-asU"/>
                                 </constraints>
@@ -138,13 +133,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RoW-aA-odq">
-                                <rect key="frame" x="0.0" y="425.5" width="320" height="32"/>
+                                <rect key="frame" x="0.0" y="199" width="320" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="gAF-l4-ztb" userLabel="Map View Height"/>
                                 </constraints>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5a-0s-pJM">
-                                <rect key="frame" x="0.0" y="458.5" width="320" height="64"/>
+                                <rect key="frame" x="0.0" y="232" width="320" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-SB-2cT">
                                         <rect key="frame" x="22" y="8" width="283" height="30"/>

@@ -98,7 +98,11 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
         if control == view.rightCalloutAccessoryView {
             let app = UIApplication.shared
             if let toOpen = view.annotation?.subtitle! {
-                app.openURL(URL(string: toOpen)!)
+                if (!toOpen.isEmpty) {
+                   app.openURL(URL(string: toOpen)!)
+                } else {
+                    print("URL not provided and will not be opened")
+                }
             }
         }
     }

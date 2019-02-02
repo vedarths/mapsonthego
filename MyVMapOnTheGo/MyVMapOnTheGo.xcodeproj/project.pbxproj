@@ -20,7 +20,6 @@
 		BE597E21218DA838007E447A /* MyVMapOnTheGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE597E20218DA838007E447A /* MyVMapOnTheGoUITests.swift */; };
 		BE597E35218DAE3D007E447A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BE597E34218DAE3D007E447A /* Podfile */; };
 		BE597E3B218DDC80007E447A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE597E3A218DDC80007E447A /* Default-568h@2x.png */; };
-		BE597E3F218DE66D007E447A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE597E3E218DE66D007E447A /* GoogleService-Info.plist */; };
 		BE7C517421D9FD54007458E6 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C517321D9FD54007458E6 /* ViewManager.swift */; };
 		BE7C517621E9C436007458E6 /* UdacityUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C517521E9C436007458E6 /* UdacityUser.swift */; };
 		BE98FD562196E42E00DC9D4D /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98FD552196E42E00DC9D4D /* UdacityClient.swift */; };
@@ -74,7 +73,6 @@
 		BE597E22218DA838007E447A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE597E34218DAE3D007E447A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE597E3A218DDC80007E447A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BE597E3E218DE66D007E447A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE7C517321D9FD54007458E6 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		BE7C517521E9C436007458E6 /* UdacityUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityUser.swift; sourceTree = "<group>"; };
 		BE98FD552196E42E00DC9D4D /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				BE98FD532196E41100DC9D4D /* Model */,
 				BE4E20132196DF0F001FA836 /* View */,
 				BE4E20102196DEBF001FA836 /* Controller */,
-				BE597E3E218DE66D007E447A /* GoogleService-Info.plist */,
 				BE597E0C218DA838007E447A /* Info.plist */,
 				BE597E33218DAB56007E447A /* Supporting Files */,
 				BE597E32218DAB4A007E447A /* Assets */,
@@ -378,7 +375,6 @@
 				BE597E35218DAE3D007E447A /* Podfile in Resources */,
 				BE597E3B218DDC80007E447A /* Default-568h@2x.png in Resources */,
 				BE597E06218DA837007E447A /* Main.storyboard in Resources */,
-				BE597E3F218DE66D007E447A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
