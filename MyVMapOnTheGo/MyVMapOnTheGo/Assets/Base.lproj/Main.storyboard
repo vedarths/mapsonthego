@@ -33,7 +33,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7L-C8-Mmk" customClass="StyledButton" customModule="MyVMapOnTheGo" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
                                 <rect key="frame" x="20" y="298.5" width="284" height="31"/>
-                                <color key="backgroundColor" red="1" green="0.34582255123093431" blue="0.021414885975564069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.059798034870000003" green="0.1913343528" blue="0.9192116857" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96080166101455688" green="0.52710574935995647" blue="0.10015410119186706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.98587615409999996" green="1" blue="0.98671955310000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cap-M5-MWH" firstAttribute="top" secondItem="j2a-R3-C6Z" secondAttribute="bottom" constant="22" id="1iZ-QD-RX2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j2a-R3-C6Z" secondAttribute="trailing" constant="16" id="3OU-YJ-WFQ"/>
@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsJ-2i-ruS" userLabel="Question Label">
-                                <rect key="frame" x="0.0" y="58" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="58" width="320" height="25.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="uNJ-ua-6Go"/>
                                 </constraints>
@@ -124,7 +124,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nVs-AH-prF">
-                                <rect key="frame" x="0.0" y="145" width="320" height="17"/>
+                                <rect key="frame" x="0.0" y="70.5" width="320" height="318"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="318" id="gjO-w9-asU"/>
                                 </constraints>
@@ -133,13 +133,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RoW-aA-odq">
-                                <rect key="frame" x="0.0" y="199" width="320" height="32"/>
+                                <rect key="frame" x="0.0" y="425.5" width="320" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="gAF-l4-ztb" userLabel="Map View Height"/>
                                 </constraints>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5a-0s-pJM">
-                                <rect key="frame" x="0.0" y="232" width="320" height="64"/>
+                                <rect key="frame" x="0.0" y="458.5" width="320" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-SB-2cT">
                                         <rect key="frame" x="22" y="8" width="283" height="30"/>
@@ -272,21 +272,21 @@
             <objects>
                 <tabBarController storyboardIdentifier="MapTabBarController" title="MapTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LbT-Zk-dPc" customClass="MainController" customModule="MyVMapOnTheGo" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="On The Map" id="0an-rI-sRT">
-                        <barButtonItem key="leftBarButtonItem" image="icon_pin" id="H7o-HC-myv">
+                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="zXQ-ze-WAf">
                             <connections>
-                                <action selector="addLocation:" destination="LbT-Zk-dPc" id="PJY-Ji-xFd"/>
-                                <segue destination="yLB-GT-n2B" kind="presentation" id="CE1-fw-rF4"/>
+                                <action selector="doLogout:" destination="LbT-Zk-dPc" id="Q0U-4T-efY"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="H7o-HC-myv">
+                                <connections>
+                                    <action selector="addLocation:" destination="LbT-Zk-dPc" id="PJY-Ji-xFd"/>
+                                    <segue destination="yLB-GT-n2B" kind="presentation" id="CE1-fw-rF4"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="icon_refresh" id="pbS-QA-JzA" userLabel="Refresh Button">
                                 <connections>
                                     <action selector="refresh:" destination="LbT-Zk-dPc" id="DAM-kc-ydg"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="stop" id="zXQ-ze-WAf">
-                                <connections>
-                                    <action selector="doLogout:" destination="LbT-Zk-dPc" id="Q0U-4T-efY"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -310,7 +310,6 @@
         <image name="icon_listview-deselected" width="75" height="50"/>
         <image name="icon_listview-selected" width="75" height="50"/>
         <image name="icon_mapview-selected" width="75" height="50"/>
-        <image name="icon_pin" width="24" height="24"/>
         <image name="icon_refresh" width="24" height="24"/>
         <image name="logo-u" width="62" height="62"/>
     </resources>
