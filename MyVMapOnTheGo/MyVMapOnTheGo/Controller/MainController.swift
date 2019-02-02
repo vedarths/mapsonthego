@@ -32,10 +32,9 @@ class MainController: UITabBarController {
         let logoutAction = UIAlertAction(title: "Logout", style: .default, handler: { (action: UIAlertAction!) in
             // Try to delete API session for more security
             UdacityClient.sharedInstance().logout { (success, error) -> Void in
-                // Go to login screen
+                // Return to login screen
                 self.dismiss(animated: true, completion: nil)
-           
-            };
+                };
         })
         confirmationAlert.addAction(logoutAction)
     }
@@ -73,4 +72,6 @@ class MainController: UITabBarController {
         
         self.present(controller, animated: true, completion: nil)
     }
+    
+   
 }
