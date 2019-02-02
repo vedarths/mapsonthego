@@ -154,14 +154,19 @@ class AddLocationViewController: UIViewController, MKMapViewDelegate, UITextFiel
                 DispatchQueue.main.async {
                     ViewManager.shared.hideDefaultView()
                     print("error occurred adding student location \(String(describing: error))")
-                    //self.showError(message:  error!)
-                }
+                 }
                 return
-            }
+              }
+            // Refresh map and table
+            let navigationController = self.presentingViewController as! UINavigationController
+            let studentLocationViewController = navigationController.viewControllers.first as! MainController
+            studentLocationViewController.refresh(nil)
+            self.dismiss(animated: true, completion: nil)
             }
         }
     }
-
+    
+    
 
 
 /*

@@ -11,14 +11,19 @@ import UIKit
 
 class MapTableViewController: UITableViewController {
     
+    func doRefresh() {
+        tableView.reloadData()
+    }
+    
     var locations = [Location]()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
         locations = appDelegate.locations
-        tableView.reloadData()
+        doRefresh()
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return locations.count

@@ -12,8 +12,6 @@ import MapKit
 
 class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
     
-    
-  
     @IBOutlet weak var mapView: MKMapView!
 
     var locations: [Location] = [Location]()
@@ -92,9 +90,6 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
         }
         
         return pinView
-    }
-    
-    @IBAction func refreshClicked(_ sender: Any) {
     }
     
     // This delegate method is implemented to respond to taps. It opens the system browser

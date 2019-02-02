@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/MapTableViewController.swift"
-            timestampString = "569569199.31256"
+            timestampString = "570792502.6288919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.172245"
+            timestampString = "570792502.629016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -104,7 +104,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.172767"
+            timestampString = "570792502.629678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
@@ -120,7 +120,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.173198"
+            timestampString = "570792502.629974"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -136,23 +136,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.1735801"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "pin(coordinate:location:mapView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.174005"
+            timestampString = "570792502.630362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -168,7 +152,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.174378"
+            timestampString = "570792502.6307271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -184,7 +168,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.1746939"
+            timestampString = "570792502.630987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -200,7 +184,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.175022"
+            timestampString = "570792502.6312391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
@@ -216,7 +200,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.175408"
+            timestampString = "570792502.631503"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -232,7 +216,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/ViewManager.swift"
-            timestampString = "569571048.101151"
+            timestampString = "570789179.76528"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -248,7 +232,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.175833"
+            timestampString = "570792502.63178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -264,7 +248,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.176308"
+            timestampString = "570792502.632027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
@@ -280,7 +264,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.176734"
+            timestampString = "570792502.6322941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
@@ -328,7 +312,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.177109"
+            timestampString = "570792502.63261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
@@ -344,11 +328,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "569577187.029146"
+            timestampString = "570792502.632934"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "getSessionId(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -360,7 +344,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.177462"
+            timestampString = "570792502.632991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "133"
@@ -376,7 +360,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "570269837.178015"
+            timestampString = "570792502.633315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "152"
@@ -392,7 +376,7 @@
                   moduleName = "MyVMapOnTheGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/AddLocationViewController.swift"
-                  timestampString = "570269837.3062249"
+                  timestampString = "570790089.605831"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "152"
@@ -407,12 +391,12 @@
                   moduleName = "MyVMapOnTheGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/AddLocationViewController.swift"
-                  timestampString = "570269837.3098609"
+                  timestampString = "570790089.608879"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "153"
                   endingLineNumber = "153"
-                  offsetFromSymbolStart = "33">
+                  offsetFromSymbolStart = "45">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -424,7 +408,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "569577187.0299881"
+            timestampString = "570792502.633636"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -440,12 +424,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityClient.swift"
-            timestampString = "569577187.030051"
+            timestampString = "570792502.633692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "udacityURL(_:withPathExtension:)"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "taskForDeleteMethod(_:parameters:completionHandlerForDELETE:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -456,7 +440,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityClient.swift"
-            timestampString = "569577187.030105"
+            timestampString = "570792502.633791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -472,7 +456,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "569577187.0301549"
+            timestampString = "570792502.63386"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -504,7 +488,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "569577187.030314"
+            timestampString = "570792502.6339639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -520,7 +504,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Parse/ParseConvenience.swift"
-            timestampString = "570269837.178754"
+            timestampString = "570792502.634027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
@@ -568,7 +552,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Parse/ParseConvenience.swift"
-            timestampString = "570269837.1789351"
+            timestampString = "570792502.6342371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -612,16 +596,320 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Parse/ParseClient.swift"
-            timestampString = "570269837.178986"
+            timestampString = "570792502.634428"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
             endingLineNumber = "75"
             landmarkName = "taskForPOSTMethod(_:jsonBody:completionHandlerForPOST:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/Client/Parse/ParseConvenience.swift"
+            timestampString = "570792502.634564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "postStudentLocation(location:completionHandlerForLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/StudentLocationsViewController.swift"
+            timestampString = "570792502.634668"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getLocations()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyVMapOnTheGo.StudentLocationsViewController.getLocations() -&gt; ()"
+                  moduleName = "MyVMapOnTheGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/StudentLocationsViewController.swift"
+                  timestampString = "570488438.587284"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Array&lt;MyVMapOnTheGo.Location&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in MyVMapOnTheGo.StudentLocationsViewController.getLocations() -&gt; ()"
+                  moduleName = "MyVMapOnTheGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/StudentLocationsViewController.swift"
+                  timestampString = "570488438.589034"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "175">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/Client/Parse/ParseConvenience.swift"
+            timestampString = "570792502.6347491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getAllLocations(completionHandlerForLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/Client/Parse/ParseConvenience.swift"
+            timestampString = "570792502.634917"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getAllLocations(completionHandlerForLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AddLocationViewController.swift"
+            timestampString = "570792502.635054"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "submitLocation(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppDelegate.swift"
+            timestampString = "570490072.628343"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "sign(_:didSignInFor:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/LoginViewController.swift"
+            timestampString = "570792502.635601"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AddLocationViewController.swift"
+            timestampString = "570792502.635695"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "submitLocation(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AddLocationViewController.swift"
+            timestampString = "570792502.6361901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "submitLocation(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/MainController.swift"
+            timestampString = "570792502.636435"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "refresh(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyVMapOnTheGo.MainController.refresh(Swift.Optional&lt;__C.UIBarButtonItem&gt;) -&gt; ()"
+                  moduleName = "MyVMapOnTheGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/MainController.swift"
+                  timestampString = "570789805.158288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Array&lt;MyVMapOnTheGo.Location&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in MyVMapOnTheGo.MainController.refresh(Swift.Optional&lt;__C.UIBarButtonItem&gt;) -&gt; ()"
+                  moduleName = "MyVMapOnTheGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/MainController.swift"
+                  timestampString = "570789805.160364"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "67">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/MainController.swift"
+            timestampString = "570792502.6364861"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "refresh(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/LoginViewController.swift"
+            timestampString = "570792502.636531"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "doLogin(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyVMapOnTheGo.LoginViewController.doLogin(Any) -&gt; ()"
+                  moduleName = "MyVMapOnTheGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/LoginViewController.swift"
+                  timestampString = "570789249.56479"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in MyVMapOnTheGo.LoginViewController.doLogin(Any) -&gt; ()"
+                  moduleName = "MyVMapOnTheGo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/LoginViewController.swift"
+                  timestampString = "570789249.569167"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AddLocationViewController.swift"
+            timestampString = "570792502.636569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "submitLocation(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

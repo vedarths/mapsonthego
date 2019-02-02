@@ -106,10 +106,48 @@ class UdacityClient : NSObject {
         
         /* 7. Start the request */
         task.resume()
-        
         return task
     }
     
+    
+    func taskForDeleteMethod(_ method: String, parameters: [String:AnyObject], completionHandlerForDELETE: @escaping (_ error: NSError?) -> Void) -> URLSessionDataTask {
+        
+        /* 2/3. Build the URL, Configure the request */
+        let request = NSMutableURLRequest(url: udacityURL(parameters, withPathExtension: method))
+        request.httpMethod = "DELETE"
+        var xsrfCookie: HTTPCookie? = nil
+        let sharedCookieStorage = HTTPCookieStorage.shared
+        for cookie in sharedCookieStorage.cookies! {
+            if cookie.name == "XSRF-TOKEN" { xsrfCookie = cookie }
+        }
+        if let xsrfCookie = xsrfCookie {
+            request.setValue(xsrfCookie.value, forHTTPHeaderField: "X-XSRF-TOKEN")
+        }
+        
+         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
+            func sendError(_ error: String) {
+                print(error)
+                let userInfo = [NSLocalizedDescriptionKey : error]
+                completionHandlerForDELETE(NSError(domain: "taskForGETMethod", code: 1, userInfo: userInfo))
+            }
+            
+            /* GUARD: Was there an error? */
+            guard (error == nil) else {
+                sendError("There was an error with your DELETE request: \(error!)")
+                return
+            }
+            
+            /* GUARD: Did we get a successful 2XX response? */
+            guard let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
+                sendError("Your DELETE request returned a status code other than 2xx!")
+                return
+            }
+        }
+        task.resume()
+        return task
+    }
+        
+        
     // given raw JSON, return a usable Foundation object
     private func convertDataWithCompletionHandler(_ data: Data, completionHandlerForConvertData: (_ result: AnyObject?, _ error: NSError?) -> Void) {
         
@@ -124,8 +162,6 @@ class UdacityClient : NSObject {
         }
         completionHandlerForConvertData(parsedResult, nil)
     }
-    
-    
     
     // create a session URL from parameters
     private func udacityURL(_ parameters: [String:AnyObject], withPathExtension: String? = nil) -> URL {
