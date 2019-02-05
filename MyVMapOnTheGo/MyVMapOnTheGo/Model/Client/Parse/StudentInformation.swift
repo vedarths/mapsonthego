@@ -1,11 +1,11 @@
 //
-//  Location.swift
+//  StudentInformation.swift
 //  MyVMapOnTheGo
 //
 //  Created by Vedarth Solutions on 12/1/18.
 //  Copyright © 2018 Vedarth Solutions. All rights reserved.
 //
-struct Location {
+struct StudentInformation {
     var objectId: String
     var uniqueKey: String
     var firstName: String
@@ -80,13 +80,13 @@ struct Location {
         }
     }
     
-    static func LocationsFromResults(_ results: [[String:Any]]) -> [Location] {
+    static func LocationsFromResults(_ results: [[String:Any]]) -> [StudentInformation] {
         
-        var locations = [Location]()
+        var locations = [StudentInformation]()
         
         // iterate through array of dictionaries, each Movie is a dictionary
         for result in results {
-            locations.append(Location(dictionary: result))
+            locations.append(StudentInformation(dictionary: result))
            
         }
         return locations
@@ -95,9 +95,9 @@ struct Location {
 
 // MARK: - Location: Equatable
 
-extension Location: Equatable {}
+extension StudentInformation: Equatable {}
 
-func ==(lhs: Location, rhs: Location) -> Bool {
+func ==(lhs: StudentInformation, rhs: StudentInformation) -> Bool {
     return lhs.objectId == rhs.objectId
 }
 

@@ -109,7 +109,7 @@
         <!--Add Location View Controller-->
         <scene sceneID="E26-pq-0hA">
             <objects>
-                <viewController id="yLB-GT-n2B" userLabel="Add Location View Controller" customClass="FindLocationViewController" sceneMemberID="viewController">
+                <viewController id="yLB-GT-n2B" userLabel="Add Location View Controller" customClass="AddLocationViewController" customModule="MyVMapOnTheGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fu6-C6-09g" userLabel="QuestionView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,17 +137,17 @@
                                 <rect key="frame" x="0.0" y="20" width="321" height="44"/>
                                 <items>
                                     <navigationItem title="Add Location" id="P7d-Qf-tt8">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ZmH-8n-jke"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ZmH-8n-jke">
+                                            <connections>
+                                                <action selector="cancel:" destination="yLB-GT-n2B" id="tnl-kj-Yi6"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLo-Ac-q3A">
-                                <rect key="frame" x="104" y="525" width="113" height="30"/>
-                                <color key="backgroundColor" red="0.059798034870000003" green="0.1913343528" blue="0.9192116857" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="FINISH">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RdB-dS-U3o">
+                                <rect key="frame" x="9" y="76" width="304" height="441"/>
+                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3f-Lt-uOL" customClass="StyledButton" customModule="MyVMapOnTheGo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="235" width="289" height="33"/>
                                 <color key="backgroundColor" red="0.035698634771994336" green="0.45837341937992448" blue="0.72172337770462036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,10 +158,24 @@
                                 <state key="normal" title="FIND LOCATION">
                                     <color key="titleColor" red="0.98587615409999996" green="1" blue="0.98671955310000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="findLocationClicked:" destination="yLB-GT-n2B" eventType="touchUpInside" id="OEK-qh-D68"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXz-al-o9S">
+                                <rect key="frame" x="98" y="466" width="126" height="30"/>
+                                <state key="normal" title="FINISH">
+                                    <color key="titleShadowColor" red="0.1080108124" green="0.0" blue="0.69219559590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitLocationClicked:" destination="yLB-GT-n2B" eventType="touchUpInside" id="36q-hd-8Pd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="XeK-KY-HnF" firstAttribute="trailing" secondItem="RdB-dS-U3o" secondAttribute="trailing" constant="7" id="1HA-As-dn7"/>
+                            <constraint firstItem="DXz-al-o9S" firstAttribute="top" secondItem="RdB-dS-U3o" secondAttribute="bottom" constant="-51" id="2J1-Yp-KAe"/>
                             <constraint firstItem="IiU-Za-flT" firstAttribute="leading" secondItem="XeK-KY-HnF" secondAttribute="leading" constant="16" id="8kl-sr-XN9"/>
                             <constraint firstItem="F3f-Lt-uOL" firstAttribute="centerX" secondItem="s5a-0s-pJM" secondAttribute="centerX" id="DeJ-5L-1jO"/>
                             <constraint firstItem="Yq4-kh-QuO" firstAttribute="top" secondItem="XeK-KY-HnF" secondAttribute="top" constant="56" id="GwL-aK-J3A"/>
@@ -170,17 +184,18 @@
                             <constraint firstItem="s5a-0s-pJM" firstAttribute="bottom" secondItem="XeK-KY-HnF" secondAttribute="bottom" id="JuY-zC-RsL"/>
                             <constraint firstItem="F3f-Lt-uOL" firstAttribute="centerX" secondItem="gsc-Al-QXF" secondAttribute="centerX" id="N17-Kt-QGT"/>
                             <constraint firstItem="F3f-Lt-uOL" firstAttribute="leading" secondItem="gzv-cq-g2u" secondAttribute="leading" id="RgY-ac-WZv"/>
-                            <constraint firstItem="jLo-Ac-q3A" firstAttribute="leading" secondItem="XeK-KY-HnF" secondAttribute="leading" constant="104" id="TsC-5k-cgP"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="jLo-Ac-q3A" secondAttribute="bottom" constant="-31" id="VpN-Vi-V2p"/>
                             <constraint firstItem="s5a-0s-pJM" firstAttribute="leading" secondItem="fu6-C6-09g" secondAttribute="leading" id="Vze-jH-OF2"/>
+                            <constraint firstItem="XeK-KY-HnF" firstAttribute="trailing" secondItem="DXz-al-o9S" secondAttribute="trailing" constant="96" id="XtR-ad-W9C"/>
                             <constraint firstItem="s5a-0s-pJM" firstAttribute="top" secondItem="fu6-C6-09g" secondAttribute="top" constant="504" id="bOM-L4-0Ec"/>
                             <constraint firstItem="Yq4-kh-QuO" firstAttribute="leading" secondItem="XeK-KY-HnF" secondAttribute="leading" constant="69" id="bTW-UO-WtF"/>
                             <constraint firstItem="gsc-Al-QXF" firstAttribute="top" secondItem="XeK-KY-HnF" secondAttribute="top" id="bWg-Pw-dQW"/>
-                            <constraint firstItem="F3f-Lt-uOL" firstAttribute="centerX" secondItem="jLo-Ac-q3A" secondAttribute="centerX" id="heU-au-BAy"/>
-                            <constraint firstItem="jLo-Ac-q3A" firstAttribute="top" secondItem="s5a-0s-pJM" secondAttribute="bottom" constant="1" id="hh9-KQ-e1w"/>
+                            <constraint firstItem="DXz-al-o9S" firstAttribute="leading" secondItem="XeK-KY-HnF" secondAttribute="leading" constant="98" id="duQ-1m-vlM"/>
+                            <constraint firstItem="RdB-dS-U3o" firstAttribute="leading" secondItem="XeK-KY-HnF" secondAttribute="leading" constant="9" id="eiR-UV-u2D"/>
                             <constraint firstItem="gzv-cq-g2u" firstAttribute="leading" secondItem="XeK-KY-HnF" secondAttribute="leading" constant="16" id="id7-Ez-8FD"/>
                             <constraint firstItem="gzv-cq-g2u" firstAttribute="top" secondItem="IiU-Za-flT" secondAttribute="bottom" constant="8" id="kea-Im-urf"/>
+                            <constraint firstItem="DXz-al-o9S" firstAttribute="bottom" secondItem="XeK-KY-HnF" secondAttribute="bottom" constant="-28" id="lLt-be-WSj"/>
                             <constraint firstItem="XeK-KY-HnF" firstAttribute="trailing" secondItem="Yq4-kh-QuO" secondAttribute="trailing" constant="68" id="rnh-yg-fs3"/>
+                            <constraint firstItem="RdB-dS-U3o" firstAttribute="top" secondItem="XeK-KY-HnF" secondAttribute="top" constant="56" id="ujk-0C-ZlQ"/>
                             <constraint firstItem="F3f-Lt-uOL" firstAttribute="centerX" secondItem="Yq4-kh-QuO" secondAttribute="centerX" id="v8Q-cB-97t"/>
                             <constraint firstItem="XeK-KY-HnF" firstAttribute="trailing" secondItem="IiU-Za-flT" secondAttribute="trailing" constant="16" id="xrB-i5-mQa"/>
                             <constraint firstItem="XeK-KY-HnF" firstAttribute="trailing" secondItem="gzv-cq-g2u" secondAttribute="trailing" constant="16" id="zYY-Qy-4dc"/>
@@ -190,6 +205,14 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addLocationIcon" destination="Yq4-kh-QuO" id="N43-i6-PMv"/>
+                        <outlet property="findLocationButton" destination="F3f-Lt-uOL" id="i1Q-RU-Kpm"/>
+                        <outlet property="finishButton" destination="DXz-al-o9S" id="tX3-su-Kvv"/>
+                        <outlet property="locationText" destination="IiU-Za-flT" id="oMd-6H-IE3"/>
+                        <outlet property="mapView" destination="RdB-dS-U3o" id="cvK-me-D8g"/>
+                        <outlet property="meadiaUrl" destination="gzv-cq-g2u" id="ws0-N1-GbB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cb-We-zIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

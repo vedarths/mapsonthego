@@ -15,7 +15,7 @@ class MapTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    var locations = [Location]()
+    var locations = [StudentInformation]()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let object = UIApplication.shared.delegate

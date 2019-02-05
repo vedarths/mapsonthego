@@ -12,7 +12,7 @@ import UIKit
 class MainController: UITabBarController {
     
     var user: UdacityUser?
-    var student: Location?
+    var student: StudentInformation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class MainController: UITabBarController {
             UdacityClient.sharedInstance().logout { (success, error) -> Void in
                 // Return to login screen
                 self.dismiss(animated: true, completion: nil)
-                };
+            };
         })
         confirmationAlert.addAction(logoutAction)
     }
@@ -73,5 +73,6 @@ class MainController: UITabBarController {
         self.present(controller, animated: true, completion: nil)
     }
     
-   
+    
 }
+

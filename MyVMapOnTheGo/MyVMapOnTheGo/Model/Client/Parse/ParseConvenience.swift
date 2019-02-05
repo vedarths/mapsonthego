@@ -11,11 +11,11 @@ import Foundation
 
 extension ParseClient {
     
-    func getAllLocations(completionHandlerForLocations: @escaping (_ success: Bool, _ result: [Location]?, _ errorString: String?) -> Void) {
+    func getAllLocations(completionHandlerForLocations: @escaping (_ success: Bool, _ result: [StudentInformation]?, _ errorString: String?) -> Void) {
         
         /* 1. Specify parameters */
         let parameters = [URLArgumentKeys.Limit: URLArgumentValues.limit]
-                
+        
         let _ = taskForGETMethod(Methods.Location, parameters: parameters as [String:AnyObject]) { (results, error) in
             
             /* 2. Send the desired value(s) to completion handler */
@@ -25,16 +25,16 @@ extension ParseClient {
             } else {
                 if let results = results?["results"] as? [[String: Any]] {
                     
-                    let locations = Location.LocationsFromResults(results)
+                    let locations = StudentInformation.LocationsFromResults(results)
                     completionHandlerForLocations(true, locations, nil)
                 } else {
                     completionHandlerForLocations(true, nil, nil)
                 }
             }
         }
-     }
+    }
     
-    func getLocationsForAStudent(key: String?, completionHandlerForLocations: @escaping (_ success: Bool, _ result: [Location]?, _ errorString: String?) -> Void) {
+    func getLocationsForAStudent(key: String?, completionHandlerForLocations: @escaping (_ success: Bool, _ result: [StudentInformation]?, _ errorString: String?) -> Void) {
         
         /* 1. Specify parameters */
         let parameters = [URLArgumentKeys.Where: "{\"uniqueKey\":\"\(key!)\"}"]
@@ -48,7 +48,7 @@ extension ParseClient {
             } else {
                 if let results = results?["results"] as? [[String: Any]] {
                     
-                    let locations = Location.LocationsFromResults(results)
+                    let locations = StudentInformation.LocationsFromResults(results)
                     completionHandlerForLocations(true, locations, nil)
                 } else {
                     completionHandlerForLocations(true, nil, nil)
@@ -57,7 +57,7 @@ extension ParseClient {
         }
     }
     
-    func postStudentLocation(location: Location, completionHandlerForLocations: @escaping (_ success: Bool, _ errorString: NSError?) -> Void) {
+    func postStudentLocation(location: StudentInformation, completionHandlerForLocations: @escaping (_ success: Bool, _ errorString: NSError?) -> Void) {
         
         
         let jsonBody = "{\"uniqueKey\": \"\(location.uniqueKey)\", \"firstName\": \"\(location.firstName)\", \"lastName\": \"\(location.lastName)\",\"mapString\":  \"\(location.mapString)\", \"mediaURL\": \"\(location.mediaURL)\",\"latitude\": \(location.latitude), \"longitude\":  \(location.longitude)}"
@@ -71,3 +71,4 @@ extension ParseClient {
         }
     }
 }
+

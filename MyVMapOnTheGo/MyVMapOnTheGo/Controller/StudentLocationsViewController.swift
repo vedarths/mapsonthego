@@ -13,18 +13,18 @@ import MapKit
 class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
-
-    var locations: [Location] = [Location]()
+    
+    var locations: [StudentInformation] = [StudentInformation]()
     
     override func viewDidLoad() {
-       super.viewDidLoad()
-       mapView.delegate = self
-       getLocations()
+        super.viewDidLoad()
+        mapView.delegate = self
+        getLocations()
     }
     
     
     func getLocations() -> Void {
-       
+        
         ParseClient.sharedInstance().getAllLocations() { (success, locations, errorString) in
             performUIUpdatesOnMain {
                 if success {
@@ -97,13 +97,37 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
             let app = UIApplication.shared
-            if let toOpen = view.annotation?.subtitle! {
-                if (!toOpen.isEmpty) {
-                   app.openURL(URL(string: toOpen)!)
-                } else {
-                    print("URL not provided and will not be opened")
+            if let url = view.annotation?.subtitle! {
+                
+                if let mediaUrlValue = view.annotation?.subtitle!,  mediaUrlValue.isEmpty == false {
+                    if (verifyUrl(urlString: mediaUrlValue)) {
+                        app.openURL(URL(string: mediaUrlValue)!)
+                    }
                 }
+               
             }
+        } else {
+            self.showError(message: "Could not segue to web browser. Check to see if URL is valid")
         }
     }
+    
+    func verifyUrl(urlString: String?) -> Bool {
+        guard let urlString = urlString,
+            let url = URL(string: urlString) else {
+                return false
+        }
+        return UIApplication.shared.canOpenURL(url)
+    }
+    
+    func showError(message: String, dismissButtonTitle: String = "OK") {
+        let controller = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        
+        controller.addAction(UIAlertAction(title: dismissButtonTitle, style: .default) { (action: UIAlertAction!) in
+            controller.dismiss(animated: true, completion: nil)
+        })
+        
+        self.present(controller, animated: true, completion: nil)
+    }
+
 }
+
