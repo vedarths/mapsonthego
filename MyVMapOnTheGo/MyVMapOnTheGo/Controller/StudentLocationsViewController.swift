@@ -100,34 +100,17 @@ class StudentLocationsViewController: UIViewController, MKMapViewDelegate {
             if let url = view.annotation?.subtitle! {
                 
                 if let mediaUrlValue = view.annotation?.subtitle!,  mediaUrlValue.isEmpty == false {
-                    if (verifyUrl(urlString: mediaUrlValue)) {
+                    if (ViewManager.shared.verifyUrl(urlString: mediaUrlValue)) {
                         app.openURL(URL(string: mediaUrlValue)!)
                     }
                 }
                
             }
-        } else {
-            self.showError(message: "Could not segue to web browser. Check to see if URL is valid")
         }
     }
     
-    func verifyUrl(urlString: String?) -> Bool {
-        guard let urlString = urlString,
-            let url = URL(string: urlString) else {
-                return false
-        }
-        return UIApplication.shared.canOpenURL(url)
-    }
     
-    func showError(message: String, dismissButtonTitle: String = "OK") {
-        let controller = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        
-        controller.addAction(UIAlertAction(title: dismissButtonTitle, style: .default) { (action: UIAlertAction!) in
-            controller.dismiss(animated: true, completion: nil)
-        })
-        
-        self.present(controller, animated: true, completion: nil)
-    }
-
+    
+    
 }
 

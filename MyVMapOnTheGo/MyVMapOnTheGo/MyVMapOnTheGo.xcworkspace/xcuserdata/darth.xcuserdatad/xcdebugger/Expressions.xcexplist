@@ -3,7 +3,36 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
+         contextName = "ParseClient.postStudentLocation(location:completionHandlerForLocations:):ParseConvenience.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static Location.LocationsFromResults(_:):Location.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AddLocationViewController.submitLocationClicked(_:):AddLocationViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in UdacityClient.getSessionId(_:):UdacityConvenience.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ParseClient.getAllLocations(completionHandlerForLocations:):ParseConvenience.swift">
+      </ContextState>
+      <ContextState
+         contextName = "StudentLocationsViewController.mapView(_:annotationView:calloutAccessoryControlTapped:):StudentLocationsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AddLocationViewController.pin(coordinate:location:mapView:):AddLocationViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "StudentLocationsViewController.getLocations():StudentLocationsViewController.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in closure #1 in MainController.refresh(_:):MainController.swift">
@@ -14,10 +43,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in ParseClient.getAllLocations(completionHandlerForLocations:):ParseConvenience.swift">
+         contextName = "AppDelegate.sign(_:didSignInFor:withError:):AppDelegate.swift">
       </ContextState>
       <ContextState
-         contextName = "AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
+         contextName = "Location.init(dictionary:):Location.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictionary[ParsedClient.JSONResponseKeys.ObjectId] as! String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
       </ContextState>
       <ContextState
          contextName = "closure #2 in closure #1 in AddLocationViewController.submitLocation(_:):AddLocationViewController.swift">
@@ -26,33 +63,10 @@
                value = "navigationController.viewControllers.first">
             </PersistentString>
             <PersistentString
-               value = "navigationController.viewControllers">
-            </PersistentString>
-            <PersistentString
                value = "// Refresh map and table&#10;                &#10;navigationController.viewControllers">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "StudentLocationsViewController.getLocations():StudentLocationsViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "ParseClient.postStudentLocation(location:completionHandlerForLocations:):ParseConvenience.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in UdacityClient.getSessionId(_:):UdacityConvenience.swift">
-      </ContextState>
-      <ContextState
-         contextName = "AppDelegate.sign(_:didSignInFor:withError:):AppDelegate.swift">
-      </ContextState>
-      <ContextState
-         contextName = "static Location.LocationsFromResults(_:):Location.swift">
-      </ContextState>
-      <ContextState
-         contextName = "Location.init(dictionary:):Location.swift">
-         <PersistentStrings>
             <PersistentString
-               value = "dictionary[ParsedClient.JSONResponseKeys.ObjectId] as! String">
+               value = "navigationController.viewControllers">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -30,5 +30,12 @@ public class ViewManager {
         defaultView.removeFromSuperview()
     }
     
+    public func verifyUrl(urlString: String?) -> Bool {
+        guard let urlString = urlString,
+            let url = URL(string: urlString) else {
+                return false
+        }
+        return UIApplication.shared.canOpenURL(url)
+    }
     
 }

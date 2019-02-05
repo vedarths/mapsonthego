@@ -78,7 +78,7 @@ class AddLocationViewController: UIViewController, MKMapViewDelegate {
         UdacityClient.sharedInstance().getUser(id: UdacityClient.sharedInstance().userId!) { (success, user, error) in
             guard error == nil else {
                 DispatchQueue.main.async {
-                    ViewManager.shared.hideDefaultView()
+                    //ViewManager.shared.hideDefaultView()
                     self.showError(message: error!)
                 }
                 return
@@ -98,7 +98,7 @@ class AddLocationViewController: UIViewController, MKMapViewDelegate {
             ParseClient.sharedInstance().postStudentLocation(location: locationToAdd) { (success, error) in
                 guard error == nil else {
                     DispatchQueue.main.async {
-                        ViewManager.shared.hideDefaultView()
+                        //ViewManager.shared.hideDefaultView()
                         print("error occurred adding student location \(String(describing: error))")
                     }
                     return
@@ -129,15 +129,16 @@ class AddLocationViewController: UIViewController, MKMapViewDelegate {
                 return
         }
         self.url = url
-        ViewManager.shared.hideDefaultView()
+        //ViewManager.shared.hideDefaultView()
         // find the co-ordinates to show a preview
-        CLGeocoder().geocodeAddressString(location) { (placemark, error) in ViewManager.shared.hideDefaultView()
+        CLGeocoder().geocodeAddressString(location) { (placemark, error) in //ViewManager.shared.hideDefaultView()
             
             guard error == nil else {
                 self.showError(message: "Location was not found.")
                 return
             }
             self.location = location
+            self.url = url
             self.coordinate = placemark?.first!.location!.coordinate
             self.pin(coordinate: self.coordinate!, location: location, mapView: self.mapView)
             self.showSubmitView()
@@ -156,7 +157,7 @@ private func pin(coordinate: CLLocationCoordinate2D, location: String, mapView: 
     let annotation = MKPointAnnotation()
     annotation.coordinate = coordinate
     annotation.title = location
-    
+    annotation.subtitle = self.url.absoluteString
     let region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
     
     DispatchQueue.main.async {

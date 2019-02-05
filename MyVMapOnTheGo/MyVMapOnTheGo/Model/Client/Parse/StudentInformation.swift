@@ -49,7 +49,6 @@ struct StudentInformation {
         } else {
             mapString = ""
         }
-        mediaURL = ""
         if let mediaUrlValue = dictionary[ParseClient.JSONResponseKeys.MediaURL] as? String,
             mediaUrlValue.isEmpty == false {
             mediaURL = mediaUrlValue
