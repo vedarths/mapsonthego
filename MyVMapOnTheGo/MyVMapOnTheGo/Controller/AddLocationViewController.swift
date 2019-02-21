@@ -89,7 +89,7 @@ class AddLocationViewController: UIViewController, MKMapViewDelegate {
                 "lastName": user!.lastName as AnyObject,
                 "longitude": Double(self.coordinate!.longitude) as AnyObject,
                 "latitude": Double(self.coordinate!.latitude) as AnyObject,
-                "mediaURL": self.url as AnyObject,
+                "mediaURL": self.meadiaUrl.text as AnyObject,
                 "mapString": self.location as AnyObject,
                 "uniqueKey": user!.id as AnyObject,
                 "objectId": "" as AnyObject,

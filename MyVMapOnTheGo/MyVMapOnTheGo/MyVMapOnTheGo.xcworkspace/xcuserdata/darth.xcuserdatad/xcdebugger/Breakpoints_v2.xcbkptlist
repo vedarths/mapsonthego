@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "570812250.714519"
+            timestampString = "571179627.763162"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "570812250.7149071"
+            timestampString = "571179627.7632231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "570812250.714977"
+            timestampString = "571179627.763267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "570812250.715037"
+            timestampString = "571179627.763306"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Udacity/UdacityConvenience.swift"
-            timestampString = "570812250.715686"
+            timestampString = "571179627.763431"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.420717"
+            timestampString = "572475200.622491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
@@ -170,12 +170,12 @@
                   moduleName = "MyVMapOnTheGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/AddLocationViewController.swift"
-                  timestampString = "571096286.583567"
+                  timestampString = "572475201.187475"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "98"
                   endingLineNumber = "98"
-                  offsetFromSymbolStart = "2531">
+                  offsetFromSymbolStart = "2936">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -185,7 +185,7 @@
                   moduleName = "MyVMapOnTheGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darth/Documents/vedarthsolutions/maponthego/MyVMapOnTheGo/MyVMapOnTheGo/Controller/AddLocationViewController.swift"
-                  timestampString = "571096286.585211"
+                  timestampString = "572475201.1908931"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.42109"
+            timestampString = "572475200.623107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
@@ -246,11 +246,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.4213361"
+            timestampString = "572475200.623453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -266,7 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.421577"
+            timestampString = "572475200.623782"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -282,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.421819"
+            timestampString = "572475200.62411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -298,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/StudentLocationsViewController.swift"
-            timestampString = "571096286.4220591"
+            timestampString = "571261898.066667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -314,7 +314,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/StudentLocationsViewController.swift"
-            timestampString = "571096286.422111"
+            timestampString = "571261898.06672"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
@@ -330,7 +330,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/StudentLocationsViewController.swift"
-            timestampString = "571096286.422155"
+            timestampString = "571261898.066764"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "112"
@@ -346,7 +346,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/StudentLocationsViewController.swift"
-            timestampString = "571096286.422196"
+            timestampString = "571261898.066806"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -362,7 +362,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.422236"
+            timestampString = "572475200.624566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
@@ -378,7 +378,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.422464"
+            timestampString = "572475200.624894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "157"
@@ -394,7 +394,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/AddLocationViewController.swift"
-            timestampString = "571096286.422689"
+            timestampString = "572475200.625209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "160"
@@ -406,11 +406,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Parse/StudentInformation.swift"
-            timestampString = "571096286.4229161"
+            timestampString = "571261898.067875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -422,11 +422,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/Client/Parse/StudentInformation.swift"
-            timestampString = "571096286.422958"
+            timestampString = "571261898.067965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -442,12 +442,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/LoginViewController.swift"
-            timestampString = "571096306.458977"
+            timestampString = "571261898.068019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "doLogin(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AddLocationViewController.swift"
+            timestampString = "572475200.625567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "submitLocationClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/MainController.swift"
+            timestampString = "572475200.625859"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "doLogout(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AddLocationViewController.swift"
+            timestampString = "572475357.6255341"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "submitLocationClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
